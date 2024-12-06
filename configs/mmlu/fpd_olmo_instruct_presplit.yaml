@@ -1,0 +1,13 @@
+fpd:
+  use_fpd_split_file_task_level: true
+  fpd_split_file: "/home/xsjin/cl-analysis/cf_cache/olmo-7b-inst-mb-nll-full.pkl"
+  model_name: "allenai/OLMo-1B"
+  ts: 0
+
+  train_batch_size: 1
+  sum_or_mean: "mean"
+
+
+
+max_input_length: 1024
+is_seq2seq: false

@@ -1,0 +1,12 @@
+templates:
+  postfix: ""
+  task: ""
+output_dir: "runs/instance-p3-bart0-large/mir_pred_subset_star{postfix}"
+
+cl_method: "mir_pred"
+
+replay_n: -1
+
+replay_freq: 1
+
+pred_forget_file: "runs/instance-p3-bart0-large/vanilla_bg100_lr1e-6_step30_sgd_greedy_eval_fixbos-lr1e-2/{task}/pred_forget_simple.subset"

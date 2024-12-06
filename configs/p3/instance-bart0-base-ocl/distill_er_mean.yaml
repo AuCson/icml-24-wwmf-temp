@@ -1,0 +1,16 @@
+templates:
+  postfix: ""
+output_dir: "runs/instance-p3-bart0-large/distill_er_mean_star{postfix}"
+
+cl_method: "er"
+replay_n: -1
+
+replay_freq: 1
+
+
+# distill
+cl_use_distill: true
+distill_reduction: "mean"
+distill_student_temp: 1.0
+distill_teacher_temp: 1.0
+distill_alpha: 1.0

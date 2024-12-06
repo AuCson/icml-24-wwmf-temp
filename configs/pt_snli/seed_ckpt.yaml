@@ -1,0 +1,4 @@
+templates:
+  ckstep: -1
+model_name: "runs/snli-roberta/seed{seed}/checkpoint-{ckstep}"
+output_dir: "runs/snli-roberta/seed{seed}/checkpoint-{ckstep}"

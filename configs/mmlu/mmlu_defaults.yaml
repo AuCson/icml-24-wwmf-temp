@@ -1,0 +1,10 @@
+
+
+mmlu:
+  path: "data/mmlu/data/"
+  cot_prompt_path: "data/flan-2/mmlu-cot.json"
+  few_shot_k: 5
+
+  is_cot: false
+  is_few_shot: true
+  answer_type: "text"

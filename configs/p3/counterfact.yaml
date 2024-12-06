@@ -1,0 +1,12 @@
+use_counterfact: true
+
+cf:
+  data_dir: "/home/xsjin/cl-analysis/data/CounterFact"
+  abl_stream: false
+
+use_mmlu: true
+max_input_length: 512
+max_output_length: 32
+per_device_eval_batch_size: 32
+ocl_tasks:
+  - dummy

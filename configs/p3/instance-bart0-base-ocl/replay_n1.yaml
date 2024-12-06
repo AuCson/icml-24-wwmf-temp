@@ -1,0 +1,5 @@
+templates:
+  postfix: "_n1"
+
+#replay_freq: 1
+replay_n: 1

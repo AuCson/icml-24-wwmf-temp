@@ -1,0 +1,8 @@
+templates:
+  start: "{start}"
+  stop: "{stop}"
+
+dolma_split_start: "{start}"
+dolma_split_stop: "{stop}"
+
+output_dir: "runs_olmo/dolma_splits/split_{start}_{stop}"

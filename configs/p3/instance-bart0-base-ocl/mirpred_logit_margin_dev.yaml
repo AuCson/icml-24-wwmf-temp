@@ -1,0 +1,5 @@
+output_dir: "runs/instance-p3-bart0-large/mir_pred_logit_margin_{postfix}"
+
+pred_forget_file: "runs/instance-p3-bart0-large/vanilla_bg100_fpd_logits_multi_kl/step100k_margin_rw_tok/{task}/fpd_dev/{task}/forgets.pkl"
+cached_pt_ds: 'runs/instance-p3-bart0-large/vanilla_bg100_fpd_logits_multi_kl/step100k_margin_rw_tok/{task}/fpd_dev/{task}/concat_pt_ds.csv'
+cached_ocl_error_ds: '/home/xsjin/cl-analysis/runs/instance-p3-bart0-large/vanilla_bg100_fpd_logits_multi_kl/step100k_margin_rw_tok/{task}/fpd_dev/{task}/ocl_error_ds.csv'

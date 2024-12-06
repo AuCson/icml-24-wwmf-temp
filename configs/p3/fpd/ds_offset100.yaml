@@ -1,0 +1,22 @@
+fpd:
+
+  train_aff_log_path: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/aff_log.pkl'
+  train_ocl_log_path: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/fpd_train/ocl_log.pkl'
+  dev_aff_log_path: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/aff_log.pkl'
+  dev_ocl_log_path: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/fpd_dev/ocl_log.pkl'
+
+  train_pt_logits_file: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/concat_pt_logits_eval.pkl'
+  dev_pt_logits_file: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/concat_pt_logits_eval.pkl'
+
+
+  train_ocl_update_logits_file: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/fpd_train/ocl_error_ds_change_v2_logit_change_eval.pkl'
+  dev_ocl_update_logits_file: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/fpd_dev/ocl_error_ds_change_v2_logit_change_eval.pkl'
+
+  train_concat_pt_ds_dir: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}'
+  train_ocl_error_ds_dir: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/fpd_train/'
+  dev_concat_pt_ds_dir: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}'
+  dev_ocl_error_ds_dir: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/{task}/fpd_dev/'
+
+  train_pt_update_logits_file: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/super_glue-cb/fpd_train/pt_logits_update_eval.s.pkl'
+  dev_pt_update_logits_file: 'runs/instance-p3-bart0-large/vanilla_bg100_step30_adam_full_offset100_greedy_eval_fixbos-lr1e-6/super_glue-cb/fpd_dev/pt_logits_update_eval.s.pkl'
+

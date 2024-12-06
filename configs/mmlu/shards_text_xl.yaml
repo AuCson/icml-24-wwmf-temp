@@ -1,0 +1,1 @@
+cached_ocl_error_ds: "/home/xsjin/cl-analysis/runs/instance-p3-flan-t5-xl/vanilla_bg100_step30_l512p_adam_lora_greedy_eval_mmlu_text-lr1e-3/mmlu/ocl_error_ds_{shard_idx}_{shard_total}.csv"

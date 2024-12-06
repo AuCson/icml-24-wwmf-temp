@@ -1,0 +1,2 @@
+fpd:
+  use_cos_dist: true

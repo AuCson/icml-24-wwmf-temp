@@ -1,0 +1,5 @@
+output_dir: "runs/instance-p3-bart0-large/mir_pred_gt_{postfix}"
+
+pred_forget_file: "runs/instance-p3-bart0-large/vanilla_bg100_fpd_thres/{task}/gt_fgt/forgets.pkl"
+cached_pt_ds: 'runs/instance-p3-bart0-large/vanilla_bg100_fpd_paired_mean_mlp/step10k/{task}/fpd_dev/concat_pt_ds.csv'
+cached_ocl_error_ds: '/home/xsjin/cl-analysis/runs/instance-p3-bart0-large/vanilla_bg100_fpd_paired_mean_mlp/step10k/{task}/fpd_dev/ocl_error_ds.csv'

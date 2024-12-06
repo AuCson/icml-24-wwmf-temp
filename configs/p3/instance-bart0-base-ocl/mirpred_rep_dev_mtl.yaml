@@ -1,0 +1,5 @@
+output_dir: "runs/instance-p3-bart0-large/mir_pred_rep_mtl_100k_{postfix}"
+
+pred_forget_file: "runs/instance-p3-bart0-large/vanilla_bg100_fpd_paired_mean_mlp_mtl/step100k/super_glue-cb+super_glue-copa+super_glue-rte+super_glue-wsc.fixed+super_glue-wic/fpd_dev/{task}/forgets.pkl"
+cached_pt_ds: "runs/instance-p3-bart0-large/vanilla_bg100_fpd_paired_mean_mlp_mtl/step100k/super_glue-cb+super_glue-copa+super_glue-rte+super_glue-wsc.fixed+super_glue-wic/fpd_dev/{task}/concat_pt_ds.csv"
+cached_ocl_error_ds: "runs/instance-p3-bart0-large/vanilla_bg100_fpd_paired_mean_mlp_mtl/step100k/super_glue-cb+super_glue-copa+super_glue-rte+super_glue-wsc.fixed+super_glue-wic/fpd_dev/{task}/ocl_error_ds.csv"

@@ -1,0 +1,2 @@
+mmlu_single_task: true
+output_dir: "runs_stream_single/{postfix}"

@@ -1,0 +1,5 @@
+templates:
+  postfix: "_n64"
+
+
+replay_n: 64

@@ -1,0 +1,8 @@
+optim_module_regex:
+  - ".*lm_head.*"
+  - ".*decoder.block.18.*"
+  - ".*decoder.block.19.*"
+  - ".*decoder.block.20.*"
+  - ".*decoder.block.21.*"
+  - ".*decoder.block.22.*"
+  - ".*decoder.block.23.*"

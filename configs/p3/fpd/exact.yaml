@@ -1,0 +1,5 @@
+fpd:
+  use_head: false
+  norm_by_inverse: true
+  reduce_method: "exact"
+  sum_or_mean: "sum"

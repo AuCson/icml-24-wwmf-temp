@@ -1,0 +1,4 @@
+templates:
+  postfix: "_n1024"
+
+replay_n: 1024

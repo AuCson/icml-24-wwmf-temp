@@ -1,0 +1,12 @@
+stream:
+  n_step_per_batch: 30
+  pt_eval_every: 10
+  seed: 0
+  n_batch_per_stream: -1
+  bs: 1
+
+output_dir: "runs_stream/{postfix}"
+
+cf:
+  stream_type: "random_correct"
+

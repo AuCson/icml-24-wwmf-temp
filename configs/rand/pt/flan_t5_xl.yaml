@@ -1,0 +1,22 @@
+is_random_pt_exps: true
+
+# dummy
+cached_ocl_error_ds: "/home/xsjin/cl-analysis/runs/instance-p3-flan-t5-large/vanilla_bg100_step30_adam_full_greedy_eval_mmlu_text-lr1e-6/mmlu/ocl_error_ds_0_8.csv"
+
+random_pt:
+  min_seed: 0
+  max_seed: 50
+  train_ts: 1000
+  train_bs: 4
+  use_cache: false
+
+max_bg_per_task: 5000
+pt_ds_offset: 1000
+
+templates:
+  my_seed: -1
+
+my_seed: "{my_seed}"
+output_dir: "runs_rand_pts/flan-t5-xl/1k_step/{my_seed}"
+
+seed: "{my_seed}"

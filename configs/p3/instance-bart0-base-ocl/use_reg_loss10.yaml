@@ -1,0 +1,2 @@
+use_reg_loss: true
+reg_loss_alpha: 10.0

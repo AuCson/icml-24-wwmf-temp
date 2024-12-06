@@ -1,0 +1,3 @@
+output_dir: "runs_stream_cf_incorr/logit_stats_step30_t10_l100/{postfix}"
+cf:
+  stream_type: "random_incorrect"

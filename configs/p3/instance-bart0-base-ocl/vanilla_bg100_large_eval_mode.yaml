@@ -1,0 +1,14 @@
+templates:
+  postfix: ""
+output_dir: "runs/instance-p3-bart0-large/vanilla_bg100{postfix}"
+model_name: "yuchenlin/BART0"
+
+cl_method: "vanilla"
+cand_k: 100
+
+replay_freq: -1
+
+max_bg_per_task: 100
+
+use_eval_mode: true
+

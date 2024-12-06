@@ -1,0 +1,7 @@
+fpd:
+  multi_token: true
+  logit_loss_type: 'margin'
+  ignore_zero_token_kl: true
+
+  use_margin_variant: true
+  ignore_zero_token_kl: true

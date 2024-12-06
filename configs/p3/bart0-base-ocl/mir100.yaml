@@ -1,0 +1,8 @@
+templates:
+  postfix: ""
+output_dir: "runs/p3-bart0/mir_c100_freq100{postfix}"
+
+do_replay: true
+replay_freq: 100
+do_candidate: true
+cand_k: 100

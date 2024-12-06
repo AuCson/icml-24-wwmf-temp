@@ -1,0 +1,28 @@
+fpd:
+  train_aff_log_path: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/aff_log.pkl'
+  train_ocl_log_path: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/fpd_train/ocl_log.pkl'
+  dev_aff_log_path:   'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/aff_log.pkl'
+  dev_ocl_log_path:   'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/fpd_dev/ocl_log.pkl'
+
+  train_pt_logits_file: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step30_l512p_adam_lora_greedy_eval_mmlu_text-lr1e-3/mmlu/0_8/concat_pt_logits_eval.pkl'
+  dev_pt_logits_file: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step30_l512p_adam_lora_greedy_eval_mmlu_text-lr1e-3/mmlu/0_8/concat_pt_logits_eval.pkl'
+
+
+  train_ocl_update_logits_file: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/fpd_train/ocl_error_ds_change_v2_logit_change_eval.pkl'
+  dev_ocl_update_logits_file:   'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/fpd_dev/ocl_error_ds_change_v2_logit_change_eval.pkl'
+
+  train_concat_pt_ds_dir: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/'
+  train_ocl_error_ds_dir: 'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/fpd_train/'
+  dev_concat_pt_ds_dir:   'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/'
+  dev_ocl_error_ds_dir:   'runs/instance-p3-flan-t5-xl/vanilla_bg100_step{STEP}_l512p_adam_lora_greedy_eval_mmlu_text-{LR}/mmlu/0_8/fpd_dev/'
+
+  model_name: "google/flan-t5-large"
+  ts: 0
+
+  train_batch_size: 8
+
+max_input_length: 512
+templates:
+  PART: "unk"
+  LR: "lr1e-4"
+  STEP: "100"

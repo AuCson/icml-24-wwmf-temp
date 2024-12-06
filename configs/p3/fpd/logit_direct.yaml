@@ -1,0 +1,9 @@
+fpd:
+  method: 'logit_direct'
+  multi_token: true
+  logit_loss_type: 'margin'
+  use_margin_variant: true
+  ignore_zero_token_kl: true
+  margin_loss_reweight: true
+  train_batch_size: 4
+  direct_loss_type: "kl"

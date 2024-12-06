@@ -1,0 +1,14 @@
+templates:
+  postfix: ""
+output_dir: "runs/instance-p3-flan-t5-large/vanilla_bg100{postfix}"
+model_name: "google/flan-t5-large"
+
+cl_method: "vanilla"
+cand_k: 100
+
+replay_freq: -1
+
+max_bg_per_task: 100
+
+use_eval_mode: true
+

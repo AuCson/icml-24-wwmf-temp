@@ -1,0 +1,15 @@
+templates:
+  seed: 0
+output_dir: "runs/snli-roberta/seed{seed}/checkpoint-{ckstep}"
+task_type: "nli"
+dataset_name: "snli"
+max_seq_length: 128
+model_name: "runs/snli-roberta/seed{seed}/checkpoint-{ckstep}"
+learning_rate: 1.0e-5
+num_epochs: 10
+per_device_train_batch_size: 16
+per_device_eval_batch_size: 16
+save_steps: 10000
+max_ocl_step: 10
+max_grad_norm: 1.0
+seed: "{seed}"

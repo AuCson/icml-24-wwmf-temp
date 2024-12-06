@@ -1,0 +1,2 @@
+fpd:
+  margin_loss_pos_weight: 0.3

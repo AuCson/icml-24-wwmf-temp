@@ -1,0 +1,12 @@
+templates:
+  postfix: ""
+output_dir: "runs/instance-p3-bart0/mirc100_new{postfix}"
+
+cl_method: "mir"
+cand_k: 100
+
+replay_n: -1
+
+replay_freq: -1
+
+max_bg_per_task: 8

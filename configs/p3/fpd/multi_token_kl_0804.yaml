@@ -1,0 +1,4 @@
+fpd:
+  multi_token: true
+  logit_loss_type: 'kl'
+  ignore_zero_token_kl: true

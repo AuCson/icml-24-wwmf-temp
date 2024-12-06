@@ -1,0 +1,2 @@
+seperate_replay_optimizer: true
+replay_optimizer_lr: 1.0e-3

@@ -1,0 +1,8 @@
+templates:
+  postfix: ""
+output_dir: "runs/instance-p3-bart0-large/er_star{postfix}"
+
+cl_method: "er"
+replay_n: -1
+
+replay_freq: 1

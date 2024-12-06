@@ -1,0 +1,5 @@
+is_episodic: true
+output_dir: "runs_episodic_cf/logit_stats_step30_false/{postfix}"
+cf:
+  stream_type: "random_correct"
+  use_true_output: false

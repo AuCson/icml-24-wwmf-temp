@@ -1,0 +1,65 @@
+pretrain_ds_dir: "data/p3_pretrain"
+ocl_ds_dir: "data/recross_data"
+max_input_length: 512
+max_output_length: 128
+model_name: "facebook/BART-base"
+output_dir: "runs/p3-bart0/super_glue-wsc.fixed"
+learning_rate: 1.0e-6
+
+templates:
+  seed: 0
+
+seed: "{seed}"
+
+num_epoch_per_task: 5
+max_step_per_task: -1
+per_device_train_batch_size: 8
+
+do_replay: true
+replay_freq: 1
+replay_k: 8
+replay_n_step: 1
+replay_n: -1
+do_candidate: true
+cand_k: 100
+mir_with_abs_score: false
+pred_forget_file: null
+
+optim_module_regex: null
+
+seperate_replay_optimizer: false
+replay_optimizer_lr: 1.0e-5
+optimizer_type: AdamW
+
+ocl_steps: 10
+
+num_beams: 3
+max_grad_norm: 1.0
+
+use_eval_mode: false
+mir_no_resample: false
+fix_label_bos: false
+
+# distill
+cl_use_distill: false
+
+distill_reduction: "sum"
+distill_student_temp: 1.0
+distill_teacher_temp: 1.0
+distill_alpha: 1.0
+
+# delay opt
+delay_opt: false
+
+fix_decoder_start_token_id: false
+
+cached_pt_ds: null
+cached_ocl_error_ds: null
+
+ocl_tasks:
+  - zsre
+pt_tasks:
+  - nq
+
+load_ckpt: "/home/xsjin/cl-analysis/data/mend/zsre/QA_model.ckpt"
+fix_bos_token_id: true

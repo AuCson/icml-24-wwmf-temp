@@ -1,0 +1,8 @@
+is_subset_exps: true
+subset:
+  n_example_ratio: 0.5
+  n_step: 100
+stream:
+  bs: 8
+mmlu_single_task: true
+output_dir: "runs_subsets/{postfix}"

@@ -1,0 +1,4 @@
+templates:
+  postfix: "_freq1_nstep4"
+
+replay_n_step: 4

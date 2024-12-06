@@ -1,0 +1,3 @@
+stream:
+  n_step_per_batch: 30
+  pt_eval_every: 1

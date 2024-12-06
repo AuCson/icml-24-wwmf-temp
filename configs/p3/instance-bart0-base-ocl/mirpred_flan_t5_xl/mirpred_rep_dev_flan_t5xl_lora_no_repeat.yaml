@@ -1,0 +1,21 @@
+cl_method: "mir_pred"
+
+replay_n: -1
+
+replay_freq: 1
+
+# distill
+cl_use_distill: true
+distill_reduction: "sum"
+distill_student_temp: 1.0
+distill_teacher_temp: 1.0
+distill_alpha: 1.0
+
+
+output_dir: "runs/instance-p3-flan-t5-xl/mir_pred_rep_prior_odd_no_repeat_{postfix}"
+
+pred_forget_file: "/home/xsjin/cl-analysis/runs/instance-p3-flan-t5-xl/vanilla_bg100_fpd_reps_lora_prior_odd/step100k_margin_rw_sc10_ce0.1_lr1e-4_tok_small_baselr1e-3/mmlu/fpd_dev/mmlu/forgets.pkl"
+cached_pt_ds: '/home/xsjin/cl-analysis/runs/instance-p3-flan-t5-xl/vanilla_bg100_fpd_reps_lora_prior_odd/step100k_margin_rw_sc10_ce0.1_lr1e-4_tok_small_baselr1e-3/mmlu/fpd_dev/mmlu/concat_pt_ds.csv'
+cached_ocl_error_ds: '/home/xsjin/cl-analysis/runs/instance-p3-flan-t5-xl/vanilla_bg100_fpd_reps_lora_prior_odd/step100k_margin_rw_sc10_ce0.1_lr1e-4_tok_small_baselr1e-3/mmlu/fpd_dev/mmlu/ocl_error_ds.csv'
+
+er_no_repeat: true

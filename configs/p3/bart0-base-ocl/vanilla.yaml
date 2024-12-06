@@ -1,0 +1,8 @@
+templates:
+  postfix: ""
+output_dir: "runs/p3-bart0/vanilla{postfix}"
+
+do_replay: false
+replay_freq: 100000000000000
+do_candidate: false
+cand_k: 100

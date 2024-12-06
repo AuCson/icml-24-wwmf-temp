@@ -1,0 +1,11 @@
+use_alt_p3: true
+max_input_length: 512
+mmlu_max_input_length: 2048
+per_device_eval_batch_size: 32
+truncate_prefix: true
+ocl_alt_ans_dir: "data/p3_contrast/"
+
+alt_p3:
+  train_offset: 0
+  train_max_instance: 500
+  abl: false

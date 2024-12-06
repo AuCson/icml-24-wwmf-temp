@@ -1,0 +1,6 @@
+data/
+runs/
+wandb/
+*.pyc
+__pycache__
+*.npy

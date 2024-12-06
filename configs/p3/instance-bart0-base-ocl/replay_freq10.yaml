@@ -1,0 +1,4 @@
+templates:
+  postfix: "_freq10"
+
+replay_freq: 10

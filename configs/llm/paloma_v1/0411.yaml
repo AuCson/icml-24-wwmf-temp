@@ -1,0 +1,4 @@
+templates:
+  shard: "{shard}"
+
+output_dir: "runs_olmo/0411/shard_{shard}"
