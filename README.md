@@ -16,4 +16,6 @@ Dataset
 
 Side note
 
-`configs/p3/instance-bart0-base-ocl/lr1e-6.yaml` actually uses LR=1e-5 as reported in the paper.
+- `configs/p3/instance-bart0-base-ocl/lr1e-6.yaml` actually uses LR=1e-5 as reported in the paper.
+- Fixed a sgn issue I messed up - now the implementation is faithful to icml paper instead of the follow-up paper.
+
