@@ -78,3 +78,5 @@ fpd:
   reduce_method: "mean"
 
   binarilize_labels: false
+
+  rep_prod_sgn: 1

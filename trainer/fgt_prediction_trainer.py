@@ -151,7 +151,7 @@ class ForgettingPredictionModel(nn.Module):
                 rep_prod = (rep_a * rep_b).sum(-1)
             else:
                 rep_prod = (rep_a * rep_b).mean(-1)
-        rep_prod = -rep_prod / self.temp
+        rep_prod = self.config.rep_prod_sgn * rep_prod / self.temp
         return rep_prod
 
     def get_rep_prod_mat(self, all_ocl_reps, all_pt_reps):
@@ -165,7 +165,7 @@ class ForgettingPredictionModel(nn.Module):
                 rep_prod_grid = torch.matmul(all_ocl_reps, all_pt_reps.transpose(0,1))
             else:
                 rep_prod_grid = torch.matmul(all_ocl_reps, all_pt_reps.transpose(0,1)) / float(all_ocl_reps.size(1))
-        rep_prod_grid = -rep_prod_grid / self.temp 
+        rep_prod_grid = self.config.rep_prod_sgn * rep_prod_grid / self.temp 
         return rep_prod_grid
 
 
