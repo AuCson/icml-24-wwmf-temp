@@ -14,4 +14,6 @@ Dataset
 - P3 dataset: We used preprocessed data from https://github.com/INK-USC/ReCross/tree/main/data
 - FLAN: We used this version: https://huggingface.co/datasets/Muennighoff/flan
 
+Side note
 
+`configs/p3/instance-bart0-base-ocl/lr1e-6.yaml` actually uses LR=1e-5 as reported in the paper.
